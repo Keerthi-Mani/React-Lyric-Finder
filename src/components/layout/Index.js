@@ -1,6 +1,10 @@
 import React from "react";
-
+import Tracks from "../components/tracks/Tracks";
 const Index = () => {
-  return <div className="search-form"></div>;
+  return (
+    <React.Fragment>
+      <Tracks />
+    </React.Fragment>
+  );
 };
 export default Index;
