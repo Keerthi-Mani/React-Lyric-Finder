@@ -1,5 +1,6 @@
 import React from "react";
-import Tracks from "../components/tracks/Tracks";
+import Tracks from "../tracks/Tracks";
+
 const Index = () => {
   return (
     <React.Fragment>

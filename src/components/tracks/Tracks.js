@@ -1,7 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Tracks = () => {
-  return <div></div>;
-};
+class Tracks extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Tracks</h1>
+      </div>
+    );
+  }
+}
 
 export default Tracks;
