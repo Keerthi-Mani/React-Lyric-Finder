@@ -8,7 +8,7 @@ export function ContextController({ children }) {
     heading: ""
   };
 
-  const [state, setState] = useState(intialState);
+  const [state, setState] = useState(initialState);
 
   useEffect(() => {
     axios
@@ -17,7 +17,7 @@ export function ContextController({ children }) {
       )
       .then(res => {
         console.log(res.data);
-        this.setState({
+        setState({
           track_list: res.data.message.body.track_list,
           heading: "Top 10 Tracks"
         });
