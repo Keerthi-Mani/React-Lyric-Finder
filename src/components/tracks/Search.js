@@ -14,7 +14,6 @@ const Search = () => {
       )
       .then(res => {
         let track_list = res.data.message.body.track_list;
-
         setState({
           track_list: track_list,
           heading: "Search Results"
@@ -23,7 +22,7 @@ const Search = () => {
       .catch(err => {
         console.log(err);
       });
-  }, [trackTitle]);
+  }, [trackTitle, setState]);
 
   const findTrack = e => {
     e.preventDefault();
@@ -32,6 +31,7 @@ const Search = () => {
 
   const onChange = e => {
     setUserInput(e.target.value);
+    console.log(e.target.value);
   };
 
   return (
